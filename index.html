@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransLog - Transportes</title>
+
+    <link rel="stylesheet" href="css\style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <!-- Cabeçalho -->
+        <header>
+            <div class="logo">
+                <h1>TransLog</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Seção principal -->
+        <section id="destaque">
+            <div class="conteudo-destaque">
+                <h2>Logística Eficiente para o Seu Negócio</h2>
+                <p>Transporte de cargas com segurança e pontualidade.</p>
+                <a href="#servicos" class="botao">Conheça Nossos Serviços</a>
+            </div>
+        </section>
+
+        <!-- Sobre -->
+        <section id="sobre">
+            <h2>Sobre a TransLog</h2>
+            <p>A TransLog é especializada em transporte de cargas, oferecendo soluções logísticas confiáveis e personalizadas. Com uma frota moderna, garantimos entregas rápidas e seguras em todo o país.</p>
+        </section>
+
+        <!-- Serviços -->
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="container-servicos">
+                <div class="servico">
+                    <img src="images\transporte-nacional.jpeg" alt="Transporte Nacional">
+                    <h3>Transporte Nacional</h3>
+                    <p>Entregas em todo o Brasil com eficiência e segurança.</p>
+                </div>
+                
+                <div class="servico">
+                    <img src="images\centro-de-logistica-integrada.jpeg" alt="Centro de Logística Integrada">
+                    <h3>Logística Integrada</h3>
+                    <p>Gerenciamento completo da cadeia de suprimentos.</p>
+                </div>
+                
+                <div class="servico">
+                    <img src="images\fretes-urgentes.jpeg" alt="Fretes Urgentes">
+                    <h3>Fretes Urgentes</h3>
+                    <p>Soluções rápidas para entregas prioritárias.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            
+            <form action="/submit" method="POST">
+                <fieldset>
+                    <legend>Formulário de Contato</legend>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="Digite seu email"><br>
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="5" cols="30" placeholder="Escreva sua mensagem"></textarea><br>
+                    <input type="submit" value="Enviar" class="botao">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2025 TransLog. Todos os direitos reservados.</p>
+        <p><i class="material-icons">email</i> contato@translog.com</p>
+    </footer>
+</body>
+</html>
